@@ -6,11 +6,12 @@ const Home: React.FC = () => {
     <div className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1>Bienvenido a Mi Sitio Web</h1>
-          <p>Una página web moderna y responsiva construida con React</p>
-          <div className="hero-buttons">
-            <button className="btn btn-primary">Explorar</button>
-            <button className="btn btn-secondary">Saber Más</button>
+          <div className="hero-logo">
+            <img src="/src/assets/LogoMADLM-removebg-preview.png" alt="Logo" className="main-logo" />
+            <div className="hero-text">
+              <h2>Bienvenido a Más Allá de los Muros</h2>
+              <p>Trabajo social sin consciencia de clase es asistencialismo.</p>
+            </div>
           </div>
         </div>
       </section>
