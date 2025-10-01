@@ -1,4 +1,5 @@
 import React from 'react';
+import EsperanzaImg from '../assets/Esperanza.jpg';
 import './Esperanza.css';
 
 const Esperanza: React.FC = () => {
@@ -35,7 +36,7 @@ const Esperanza: React.FC = () => {
               </p>
             </div>
             <div className="story-image">
-              <img src="/src/assets/Esperanza.jpg" alt="Esperanza" className="esperanza-photo" />
+              <img src={EsperanzaImg} alt="Esperanza" className="esperanza-photo" />
             </div>
           </div>
         </div>
