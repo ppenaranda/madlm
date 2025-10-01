@@ -94,13 +94,23 @@ const Services: React.FC = () => {
     setActividadSeleccionada(null);
   };
 
-  const descargarPDF = (pdfPath: string, nombre: string) => {
-    const link = document.createElement('a');
-    link.href = pdfPath;
-    link.download = `${nombre}.pdf`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  const descargarPDF = async (pdfPath: string, nombre: string) => {
+    try {
+      const res = await fetch(pdfPath, { method: 'HEAD' });
+      if (!res.ok) {
+        alert('El archivo PDF no está disponible aún. Por favor, verifica que exista en la carpeta public.');
+        return;
+      }
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.download = `${nombre}.pdf`;
+      link.rel = 'noopener';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (e) {
+      alert('No fue posible acceder al PDF. Revisa tu conexión o la ruta del archivo.');
+    }
   };
 
   return (
@@ -108,20 +118,27 @@ const Services: React.FC = () => {
       <section className="hero-section">
         <div className="container">
           <h1>Caja de Herramientas</h1>
-          <p>Recursos y metodologías para la transformación social</p>
+          <p>
+            Documentación y recursos complementarios del proyecto de grado investigativo
+            e intervención en trabajo social.
+          </p>
         </div>
       </section>
 
       <section className="toggle-section">
         <div className="container">
           <div className="toggle-container">
-            <button 
+            <button
+              type="button"
+              aria-pressed={tipoSeleccionado === 'tipo1'}
               className={`toggle-btn ${tipoSeleccionado === 'tipo1' ? 'active' : ''}`}
               onClick={() => setTipoSeleccionado('tipo1')}
             >
               Tipo 1
             </button>
-            <button 
+            <button
+              type="button"
+              aria-pressed={tipoSeleccionado === 'tipo2'}
               className={`toggle-btn ${tipoSeleccionado === 'tipo2' ? 'active' : ''}`}
               onClick={() => setTipoSeleccionado('tipo2')}
             >
@@ -135,10 +152,12 @@ const Services: React.FC = () => {
         <div className="container">
           <div className="actividades-grid">
             {actividadesActuales.map((actividad) => (
-              <div 
-                key={actividad.id} 
+              <button
+                type="button"
+                key={actividad.id}
                 className="actividad-card"
                 onClick={() => abrirActividad(actividad)}
+                aria-label={`Abrir actividad ${actividad.nombre}`}
               >
                 <div className="actividad-imagen">
                   <span className="emoji">{actividad.imagen}</span>
@@ -147,7 +166,7 @@ const Services: React.FC = () => {
                   <h3>{actividad.nombre}</h3>
                   <p>{actividad.descripcionCorta}</p>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -168,7 +187,8 @@ const Services: React.FC = () => {
               <p className="descripcion-larga">{actividadSeleccionada.descripcionLarga}</p>
             </div>
             <div className="modal-footer">
-              <button 
+              <button
+                type="button"
                 className="descargar-btn"
                 onClick={() => descargarPDF(actividadSeleccionada.pdfPath, actividadSeleccionada.nombre)}
               >

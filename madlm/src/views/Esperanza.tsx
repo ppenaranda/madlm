@@ -35,10 +35,7 @@ const Esperanza: React.FC = () => {
               </p>
             </div>
             <div className="story-image">
-              <div className="image-placeholder">
-                <span>🌅</span>
-                <p>Imagen de Esperanza</p>
-              </div>
+              <img src="/src/assets/Esperanza.jpg" alt="Esperanza" className="esperanza-photo" />
             </div>
           </div>
         </div>

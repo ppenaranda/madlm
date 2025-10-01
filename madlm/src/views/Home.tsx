@@ -10,7 +10,7 @@ const Home: React.FC = () => {
             <img src="/src/assets/LogoMADLM-removebg-preview.png" alt="Logo" className="main-logo" />
             <div className="hero-text">
               <h2>Más Allá de los Muros</h2>
-              <p>Un espacio para la justicia, la memoria y la transformación social.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nulla nec lorem dictum.</p>
             </div>
           </div>
         </div>
@@ -22,23 +22,24 @@ const Home: React.FC = () => {
             <div className="intro-text">
               <h2>Presentación</h2>
               <p>
-                Somos una iniciativa que impulsa procesos de sanación, organización y justicia
-                desde y para las comunidades. Trabajamos con metodologías restaurativas,
-                memoria colectiva y pedagogías críticas para fortalecer el tejido social.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula non nisi
+                consequat bibendum. Nullam a dolor sit amet urna ultricies congue. Sed ac justo sed
+                lectus gravida dapibus. Praesent volutpat, nisl id efficitur interdum, nunc arcu
+                bibendum lacus, eu pulvinar justo risus ut massa.
               </p>
             </div>
             <div className="intro-highlights">
               <div className="highlight">
-                <h3>Misión</h3>
-                <p>Acompañar procesos comunitarios que promuevan dignidad y reparación.</p>
+                <h3>Lorem 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div className="highlight">
-                <h3>Visión</h3>
-                <p>Construir territorios donde la justicia sea una práctica cotidiana.</p>
+                <h3>Lorem 2</h3>
+                <p>Morbi luctus, nibh ac placerat aliquet, justo arcu finibus arcu.</p>
               </div>
               <div className="highlight">
-                <h3>Valores</h3>
-                <p>Memoria, solidaridad, autonomía y corresponsabilidad.</p>
+                <h3>Lorem 3</h3>
+                <p>Phasellus vitae mauris vitae purus aliquet facilisis.</p>
               </div>
             </div>
           </div>
@@ -52,22 +53,22 @@ const Home: React.FC = () => {
             <div className="area-item">
               <span className="emoji">🕊️</span>
               <div>
-                <h4>Justicia Restaurativa</h4>
-                <p>Círculos, mediación y prácticas para la reparación del daño.</p>
+                <h4>Lorem area 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div className="area-item">
               <span className="emoji">🧩</span>
               <div>
-                <h4>Memoria y Pedagogías</h4>
-                <p>Procesos educativos y de memoria para el reconocimiento y la acción.</p>
+                <h4>Lorem area 2</h4>
+                <p>Integer consectetur, eros nec suscipit faucibus, nunc augue dictum nisl.</p>
               </div>
             </div>
             <div className="area-item">
               <span className="emoji">🤝</span>
               <div>
-                <h4>Organización Comunitaria</h4>
-                <p>Herramientas para el cuidado colectivo y la autonomía territorial.</p>
+                <h4>Lorem area 3</h4>
+                <p>Aliquam feugiat, nisl eu dapibus iaculis, urna augue luctus nulla.</p>
               </div>
             </div>
           </div>
@@ -77,9 +78,9 @@ const Home: React.FC = () => {
       <section className="cta">
         <div className="container">
           <div className="cta-box">
-            <h3>¿Te gustaría tejer con nosotras?</h3>
-            <p>Conversemos y busquemos juntas las herramientas adecuadas para tu proceso.</p>
-            <a className="btn-primary" href="/services">Explorar la Caja de Herramientas</a>
+            <h3>Conoce la Caja de Herramientas</h3>
+            <p>Explora recursos metodológicos y materiales complementarios del proyecto.</p>
+            <a className="btn-primary" href="/services">Ir a la Caja de Herramientas</a>
           </div>
         </div>
       </section>
