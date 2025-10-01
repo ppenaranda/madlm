@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -80,7 +81,7 @@ const Home: React.FC = () => {
           <div className="cta-box">
             <h3>Conoce la Caja de Herramientas</h3>
             <p>Explora recursos metodológicos y materiales complementarios del proyecto.</p>
-            <a className="btn-primary" href="/services">Ir a la Caja de Herramientas</a>
+            <Link className="btn-primary" to="/services">Ir a la Caja de Herramientas</Link>
           </div>
         </div>
       </section>
