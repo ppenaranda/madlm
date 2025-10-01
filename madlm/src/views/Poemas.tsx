@@ -149,36 +149,30 @@ se escribe una nueva partida.`,
 
       <section className="poemas-section">
         <div className="poemas-container">
-          <div className="poemas-grid">
-            {poemas.map((poema, index) => (
+          <div className="actividades-grid poemas-grid-like">
+            {poemas.map((poema) => (
               <div 
                 key={poema.id} 
-                className={`poema-card poema-${index + 1}`} 
+                className="actividad-card poema-card-like"
                 onClick={() => abrirPoema(poema)}
               >
-                <div className="poema-image">
-                  <div className="image-placeholder">
-                    <span className="emoji">{poema.imagen}</span>
-                  </div>
+                <div className="actividad-imagen">
+                  <span className="emoji">{poema.imagen}</span>
                 </div>
-                
-                <div className="poema-content">
+                <div className="actividad-contenido">
                   <div className="poema-tags">{poema.tags}</div>
-                  <h3 className="poema-titulo">{poema.titulo}</h3>
+                  <h3>{poema.titulo}</h3>
                   <p className="poema-preview">{poema.preview}</p>
                   <div className="poema-footer">
                     <span className="fecha">{poema.fecha}</span>
                   </div>
                 </div>
-                
-                <div className="curved-separator"></div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Modal para mostrar el poema completo */}
       {poemaSeleccionado && (
         <div className="modal-overlay" onClick={cerrarPoema}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

@@ -52,55 +52,21 @@
   padding: 0 20px;
 }
 
-.poemas-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 0;
-  position: relative;
-}
+.poemas-grid-like { gap: 30px; }
 
-.poema-card {
-  background: white;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  overflow: hidden;
-  border: 2px solid transparent;
-}
-
-.poema-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(150, 103, 224, 0.15);
-  border-color: #ebd9fc;
+.poema-card-like .poema-tags { 
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9667e0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 /* Layout específico para cada tarjeta */
-.poema-1 {
-  grid-column: 1;
-  grid-row: 1;
-  padding: 40px 30px 40px 40px;
-}
-
-.poema-2 {
-  grid-column: 2;
-  grid-row: 1;
-  padding: 40px 30px;
-}
-
-.poema-3 {
-  grid-column: 3;
-  grid-row: 1;
-  padding: 40px 40px 40px 30px;
-}
-
-.poema-4 {
-  grid-column: 2 / 4;
-  grid-row: 2;
-  padding: 40px 40px 40px 30px;
-  display: flex;
-  align-items: center;
-}
+/* Ajustes tipográficos para Poemas dentro de tarjetas tipo actividad */
+.poema-preview { color: #666; line-height: 1.6; margin-bottom: 16px; }
+.poema-footer { display: flex; justify-content: center; border-top: 1px solid #f2ebfb; padding-top: 12px; }
 
 /* Separadores curvos */
 .curved-separator {
@@ -210,24 +176,7 @@
 }
 
 /* Estilos específicos para poema-4 (layout horizontal) */
-.poema-4 .poema-image {
-  margin-right: 30px;
-  margin-bottom: 0;
-  flex-shrink: 0;
-}
-
-.poema-4 .image-placeholder {
-  width: 100px;
-  height: 100px;
-}
-
-.poema-4 .emoji {
-  font-size: 2.5rem;
-}
-
-.poema-4 .poema-content {
-  flex: 1;
-}
+/* Quita variantes específicas del layout anterior */
 
 /* Modal Styles */
 .modal-overlay {
@@ -328,26 +277,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-  .poemas-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
-  }
-  
-  .poema-1, .poema-2 {
-    grid-row: 1;
-  }
-  
-  .poema-3 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  
-  .poema-4 {
-    grid-column: 2;
-    grid-row: 2;
-  }
-}
+@media (max-width: 1200px) { .poemas-grid-like { gap: 24px; } }
 
 @media (max-width: 768px) {
   .hero-section h1 {
@@ -358,34 +288,7 @@
     font-size: 1.1rem;
   }
   
-  .poemas-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-  }
-  
-  .poema-1, .poema-2, .poema-3, .poema-4 {
-    grid-column: 1;
-    padding: 30px 20px;
-  }
-  
-  .poema-1 { grid-row: 1; }
-  .poema-2 { grid-row: 2; }
-  .poema-3 { grid-row: 3; }
-  .poema-4 { grid-row: 4; }
-  
-  .poema-4 {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .poema-4 .poema-image {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  
-  .curved-separator {
-    display: none;
-  }
+  .poemas-grid-like { gap: 20px; }
   
   .modal-content {
     margin: 10px;
@@ -403,7 +306,5 @@
     font-size: 1.5rem;
   }
   
-  .poema-completo {
-    font-size: 1rem;
-  }
+  .poema-completo { font-size: 1rem; }
 }
