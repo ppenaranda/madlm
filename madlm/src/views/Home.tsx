@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <section className="hero">
         <div className="hero-content">
           <div className="hero-logo">
-            <img src="/src/assets/LogoMADLM-removebg-preview.png" alt="Logo" className="main-logo" />
+            <img src="/src/assets/LogoMADLM_Lila_no_bg.png" alt="Logo" className="main-logo" />
             <div className="hero-text">
               <h2>Más Allá de los Muros</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae nulla nec lorem dictum.</p>

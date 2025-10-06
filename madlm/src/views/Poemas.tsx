@@ -7,7 +7,6 @@ interface Poema {
   titulo: string;
   autor: string;
   contenido: string;
-  fecha: string;
   imagen: string;
   preview: string;
 }
@@ -18,115 +17,84 @@ const Poemas: React.FC = () => {
   const poemas: Poema[] = [
     {
       id: 1,
-      tags: "ESPERANZA, RESISTENCIA, LIBERTAD",
-      titulo: "MÁS ALLÁ DE LOS MUROS",
+      tags: "ESPERANZA, RESISTENCIA, RENACER",
+      titulo: "Hay vida más allá de los muros",
       autor: "Anónimo",
-      contenido: `En las sombras de la ciudad,
-donde el silencio habla más fuerte,
-hay almas que buscan la verdad,
-más allá de los muros de la muerte.
-
-Entre ladrillos y cemento,
-donde la esperanza se esconde,
-nace un nuevo pensamiento,
-que en libertad se responde.
-
-No hay muro que pueda contener,
-el sueño de un mundo mejor,
-donde todos puedan crecer,
-con amor y sin temor.
-
-En cada grieta que se abre,
-en cada voz que se alza,
-la justicia se labra,
-con paciencia y con calma.`,
-      fecha: "NOVIEMBRE 02",
-      imagen: "🌅",
-      preview: "En las sombras de la ciudad, donde el silencio habla más fuerte, hay almas que buscan la verdad..."
+      contenido: `Dicen que aquí no crece nada,
+      que el concreto es muerte,
+      que los muros lo secan todo.
+      
+      Pero olvidan que hasta el silencio tiene grietas.
+       Y en esas grietas sembramos.
+       Y en esas semillas, florecemos.`,
+      imagen: "🌿",
+      preview: "Entre muros con grietas, sembramos vida y florecemos."
     },
     {
       id: 2,
-      tags: "JUSTICIA, LUCHA, TRANSFORMACIÓN",
-      titulo: "LA ESPERANZA QUE FLORECE",
+      tags: "SORORIDAD, UNIÓN, FLORECER",
+      titulo: "Cuando florece una",
       autor: "Anónimo",
-      contenido: `En el jardín de la resistencia,
-donde crecen las flores de la lucha,
-cada pétalo es una experiencia,
-que en el corazón se escucha.
-
-La esperanza no se marchita,
-aunque el invierno sea cruel,
-ella siempre se agita,
-como un fuego eterno y fiel.
-
-En cada semilla plantada,
-hay un futuro que nacerá,
-en cada lucha librada,
-la justicia triunfará.
-
-Las raíces de la memoria,
-alimentan el presente,
-y en cada historia,
-se escribe un futuro diferente.`,
-      fecha: "SEPTIEMBRE 09",
-      imagen: "🌱",
-      preview: "En el jardín de la resistencia, donde crecen las flores de la lucha, cada pétalo es una experiencia..."
+      contenido: `Nos miramos y nos reconocemos.
+      Tus cicatrices hablan mi idioma,
+      mis lagrimas entienden las tuyas.
+      No estamos solas,
+      cuando una florece,
+      florecemos todas.`,
+      imagen: "🤝",
+      preview: "Nos reconocemos: cuando una florece, florecemos todas."
     },
     {
       id: 3,
-      tags: "UNIDAD, SOLIDARIDAD, PUEBLO",
-      titulo: "VOCES DEL PUEBLO",
+      tags: "IDENTIDAD, FUERZA, PLURALIDAD",
+      titulo: "Ser mujer",
       autor: "Anónimo",
-      contenido: `Las voces del pueblo resuenan,
-en cada calle y en cada plaza,
-sus palabras no se condenan,
-porque la verdad se abraza.
-
-Desde las montañas hasta el mar,
-desde el campo hasta la urbe,
-el pueblo sabe luchar,
-porque en su alma se conserva.
-
-La unidad es su fuerza,
-la solidaridad su escudo,
-y en la lucha más feroz,
-siempre emerge el pueblo puro.
-
-En cada mano extendida,
-en cada abrazo sincero,
-se construye la vida,
-con amor verdadero.`,
-      fecha: "NOVIEMBRE 02",
-      imagen: "🤝",
-      preview: "Las voces del pueblo resuenan, en cada calle y en cada plaza, sus palabras no se condenan..."
+      contenido: `Soy muchas,
+      soy hija, madre, hermana,
+      soy herida y también medicina.
+      Me hicieron creer que era pequeña,
+      pero llevo dentro un océano.
+      Soy todas las mujeres que me habitan,
+      y todas florecen conmigo.
+      `,
+      imagen: "🌊",
+      preview: "Soy muchas: en mí habitan todas y juntas florecen."
     },
     {
       id: 4,
-      tags: "AMOR, PAZ, TRANSFORMACIÓN",
-      titulo: "LA LETRA CON AMOR, SI ENTRA",
+      tags: "DIGNIDAD, LIBERTAD, IDENTIDAD",
+      titulo: "Ser mujer, privada de la libertad",
       autor: "Anónimo",
-      contenido: `"La justicia es el aspecto que tiene el amor en público" - Cornel West
-
-Escribiendo este poema, me encontré con una verdad profunda:
-el amor no es solo sentimiento, es acción transformadora.
-
-En cada palabra escrita con amor,
-hay una semilla de cambio,
-en cada verso que se inspira,
-hay un mundo que se arregla.
-
-La justicia no es castigo,
-es amor en movimiento,
-es la fuerza que nos guía,
-hacia un mejor entendimiento.
-
-Cuando escribimos con amor,
-las letras cobran vida,
-y en cada página,
-se escribe una nueva partida.`,
-      fecha: "OCTUBRE 15",
-      imagen: "💝",
-      preview: "Escribiendo este poema, me encontré con una verdad profunda: el amor no es solo sentimiento..."
+      contenido: `No soy solo un número,
+      mi nombre sigue latiendo,
+      mi historia no cabe en sus carpetas.
+      Soy más que estas paredes.
+      Soy mujer, soy vida.`,
+      imagen: "🕊️",
+      preview: "Más que un número: mi nombre late y mi vida trasciende muros."
+    },
+    {
+      id: 5,
+      tags: "SORORIDAD, APOYO, RED",
+      titulo: "Hermanar",
+      autor: "Anónimo",
+      contenido: `Tu fuerza sostiene la mía,
+      mi voz levanta la tuya.
+      Juntas tejemos una red que ningún muro puede romper.`,
+      imagen: "🫶",
+      preview: "Sororidad que teje redes donde los muros no alcanzan."
+    },
+    {
+      id: 6,
+      tags: "RESILIENCIA, BROTE, FLORECER",
+      titulo: "Clavel",
+      autor: "Anónimo",
+      contenido: `Soy raíz que insiste,
+      soy brote en medio del concreto.
+      Aunque todo me niegue,
+      florezco.`,
+      imagen: "🌸",
+      preview: "Brote que insiste entre el concreto: negada mil veces, florece."
     }
   ];
 
@@ -163,9 +131,6 @@ se escribe una nueva partida.`,
                   <div className="poema-tags">{poema.tags}</div>
                   <h3>{poema.titulo}</h3>
                   <p className="poema-preview">{poema.preview}</p>
-                  <div className="poema-footer">
-                    <span className="fecha">{poema.fecha}</span>
-                  </div>
                 </div>
               </div>
             ))}
@@ -184,9 +149,6 @@ se escribe una nueva partida.`,
             </div>
             <div className="modal-body">
               <pre className="poema-completo">{poemaSeleccionado.contenido}</pre>
-            </div>
-            <div className="modal-footer">
-              <span className="modal-fecha">{poemaSeleccionado.fecha}</span>
             </div>
           </div>
         </div>
