@@ -28,7 +28,7 @@ const Poemas: React.FC = () => {
        Y en esas grietas sembramos.
        Y en esas semillas, florecemos.`,
       imagen: "🌿",
-      preview: "Entre muros con grietas, sembramos vida y florecemos."
+      preview: "Dicen que aquí no crece nada..."
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const Poemas: React.FC = () => {
       cuando una florece,
       florecemos todas.`,
       imagen: "🤝",
-      preview: "Nos reconocemos: cuando una florece, florecemos todas."
+      preview: "Nos miramos y nos reconocemos..."
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ const Poemas: React.FC = () => {
       y todas florecen conmigo.
       `,
       imagen: "🌊",
-      preview: "Soy muchas: en mí habitan todas y juntas florecen."
+      preview: "Soy muchas..."
     },
     {
       id: 4,
@@ -71,7 +71,7 @@ const Poemas: React.FC = () => {
       Soy más que estas paredes.
       Soy mujer, soy vida.`,
       imagen: "🕊️",
-      preview: "Más que un número: mi nombre late y mi vida trasciende muros."
+      preview: "No soy solo un número..."
     },
     {
       id: 5,
@@ -80,9 +80,10 @@ const Poemas: React.FC = () => {
       autor: "Anónimo",
       contenido: `Tu fuerza sostiene la mía,
       mi voz levanta la tuya.
-      Juntas tejemos una red que ningún muro puede romper.`,
+      Juntas tejemos una red 
+      que ningún muro puede romper.`,
       imagen: "🫶",
-      preview: "Sororidad que teje redes donde los muros no alcanzan."
+      preview: "Tu fuerza sostiene la mía..."
     },
     {
       id: 6,
@@ -94,7 +95,7 @@ const Poemas: React.FC = () => {
       Aunque todo me niegue,
       florezco.`,
       imagen: "🌸",
-      preview: "Brote que insiste entre el concreto: negada mil veces, florece."
+      preview: "Soy raíz que insiste..."
     }
   ];
 
