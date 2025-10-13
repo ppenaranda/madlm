@@ -33,20 +33,20 @@
 .hero-section p {
   font-size: 1.3rem;
   opacity: 0.8;
-  max-width: 600px;
+  max-width: 6000px;
   margin: 0 auto;
 }
 
 .hero-description {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .hero-description p {
   font-size: 1.1rem;
-  line-height: 1.7;
+  line-height: 1.6;
   opacity: 0.9;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   text-align: justify;
 }
 
@@ -319,8 +319,8 @@
   
   .hero-description p {
     font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
   
   .toggle-container {

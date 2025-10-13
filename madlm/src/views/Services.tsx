@@ -20,7 +20,7 @@ const Services: React.FC = () => {
       descripcionCorta: "Metodología inspirada en el Teatro del Oprimido que convierte el arte escénico en herramienta de conciencia y cambio social.",
       descripcionLarga: "Inspirada en el Teatro del Oprimido, esta metodología convierte el arte escénico en una herramienta de conciencia y cambio social. Los participantes representan escenas que revelan los imaginarios y estructuras de poder que sostienen la exclusión, para luego transformarlas colectivamente desde el cuerpo, la palabra y la acción. Deconstruyendo Imaginarios trata de transformar la opresión en conciencia y la conciencia en acción: convertir el cuerpo, la voz y la escena en instrumentos de liberación, donde el arte se vuelve un medio para imaginar y practicar otros modos de justicia y de vida.",
       imagen: "🎭",
-      pdfPath: "/downloads/deconstruyendo-imaginarios.pdf"
+      pdfPath: "/downloads/deconstruyendo_imaginarios.pdf"
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const Services: React.FC = () => {
       descripcionCorta: "Experiencia colectiva de diálogo y transformación a través de cartas que abordan temas de justicia, poder y reconciliación.",
       descripcionLarga: "Más que un juego, es una experiencia colectiva de diálogo y transformación. Esta metodología propone un recorrido reflexivo a través de cartas que abordan temas como la justicia, el poder, la reconciliación y el cuidado. Pido la Palabra trata, sobre todo, de recuperar el valor del diálogo como acto político y afectivo, donde hablar y escuchar se convierten en caminos hacia la reparación y el fortalecimiento del tejido social.",
       imagen: "🗣️",
-      pdfPath: "/downloads/pido-la-palabra.pdf"
+      pdfPath: "/downloads/pido_la_palabra.pdf"
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Services: React.FC = () => {
       descripcionCorta: "Metodología vivencial que combina narración simbólica, tejido y reflexión colectiva para fortalecer la empatía y los vínculos.",
       descripcionLarga: "Metodología vivencial que combina la narración simbólica, el tejido y la reflexión colectiva para fortalecer la empatía y los vínculos entre mujeres privadas de la libertad. A través de la historia de Esperanza y de la creación artesanal de pulseras, las participantes conectan con sus emociones, valores y fortalezas, reconociendo que la libertad también se construye en el interior. Este proceso busca tejer esperanza más allá del encierro, floreciendo desde la solidaridad y el encuentro humano.",
       imagen: "🧶",
-      pdfPath: "/downloads/esperanza-mas-alla-de-los-muros.pdf"
+      pdfPath: "/downloads/esperanza_mas_alla_de_los_muros.pdf"
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
       descripcionCorta: "Metodología que parte de la metáfora de la siembra para invitar a sembrar compromisos colectivos de cuidado y justicia.",
       descripcionLarga: "Esta metodología parte de la metáfora de la siembra para invitar a sembrar compromisos colectivos de cuidado, justicia y empatía. A través de símbolos como la tierra, las flores y las semillas, las participantes reflexionan sobre la importancia de sostener lo que florece desde la palabra y la acción compartida. Es un ejercicio que cultiva la esperanza y la corresponsabilidad, recordando que toda transformación social germina cuando el cuidado se vuelve un acto común.",
       imagen: "🌱",
-      pdfPath: "/downloads/semillas-que-nos-sostienen.pdf"
+      pdfPath: "/downloads/semillas_que_nos_sostienen.pdf"
     }
   ];
 
