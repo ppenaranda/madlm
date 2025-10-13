@@ -3,7 +3,6 @@ import './Poemas.css';
 
 interface Poema {
   id: number;
-  tags: string;
   titulo: string;
   autor: string;
   contenido: string;
@@ -17,9 +16,8 @@ const Poemas: React.FC = () => {
   const poemas: Poema[] = [
     {
       id: 1,
-      tags: "ESPERANZA, RESISTENCIA, RENACER",
       titulo: "Hay vida más allá de los muros",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `Dicen que aquí no crece nada,
       que el concreto es muerte,
       que los muros lo secan todo.
@@ -32,9 +30,8 @@ const Poemas: React.FC = () => {
     },
     {
       id: 2,
-      tags: "SORORIDAD, UNIÓN, FLORECER",
       titulo: "Cuando florece una",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `Nos miramos y nos reconocemos.
       Tus cicatrices hablan mi idioma,
       mis lagrimas entienden las tuyas.
@@ -46,9 +43,8 @@ const Poemas: React.FC = () => {
     },
     {
       id: 3,
-      tags: "IDENTIDAD, FUERZA, PLURALIDAD",
       titulo: "Ser mujer",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `Soy muchas,
       soy hija, madre, hermana,
       soy herida y también medicina.
@@ -62,9 +58,8 @@ const Poemas: React.FC = () => {
     },
     {
       id: 4,
-      tags: "DIGNIDAD, LIBERTAD, IDENTIDAD",
       titulo: "Ser mujer, privada de la libertad",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `No soy solo un número,
       mi nombre sigue latiendo,
       mi historia no cabe en sus carpetas.
@@ -75,9 +70,8 @@ const Poemas: React.FC = () => {
     },
     {
       id: 5,
-      tags: "SORORIDAD, APOYO, RED",
       titulo: "Hermanar",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `Tu fuerza sostiene la mía,
       mi voz levanta la tuya.
       Juntas tejemos una red 
@@ -87,9 +81,8 @@ const Poemas: React.FC = () => {
     },
     {
       id: 6,
-      tags: "RESILIENCIA, BROTE, FLORECER",
       titulo: "Clavel",
-      autor: "Anónimo",
+      autor: "Las mujeres privadas de la libertad",
       contenido: `Soy raíz que insiste,
       soy brote en medio del concreto.
       Aunque todo me niegue,
@@ -129,7 +122,6 @@ const Poemas: React.FC = () => {
                   <span className="emoji">{poema.imagen}</span>
                 </div>
                 <div className="actividad-contenido">
-                  <div className="poema-tags">{poema.tags}</div>
                   <h3>{poema.titulo}</h3>
                   <p className="poema-preview">{poema.preview}</p>
                 </div>
@@ -144,7 +136,6 @@ const Poemas: React.FC = () => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={cerrarPoema}>×</button>
             <div className="modal-header">
-              <div className="modal-tags">{poemaSeleccionado.tags}</div>
               <h2>{poemaSeleccionado.titulo}</h2>
               <p className="modal-autor">por {poemaSeleccionado.autor}</p>
             </div>

@@ -48,7 +48,7 @@ const Navigation: React.FC = () => {
               className={`nav-link ${location.pathname === '/services' ? 'active' : ''}`}
               onClick={closeMenu}
             >
-              Caja de Herramientas
+              Mochila Andariega
             </Link>
           </li>
           <li className="nav-item">

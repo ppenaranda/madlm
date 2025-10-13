@@ -1,5 +1,5 @@
 import React from 'react';
-import EsperanzaImg from '../assets/Esperanza.jpg';
+import EsperanzaImg from '../assets/Esperanza_no_bg.png';
 import './Esperanza.css';
 
 const Esperanza: React.FC = () => {
@@ -8,7 +8,7 @@ const Esperanza: React.FC = () => {
       <section className="hero-section">
         <div className="container">
           <h1>Esperanza</h1>
-          <p className="subtitle">Una historia de fortaleza y resiliencia</p>
+          <p className="subtitle">Entre las grietas del encierro, germinó una historia que aprendió a caminar libre, y allí donde la sombra parecía eterna, la palabra se hizo raíz y floreció Esperanza. Una mujer que brota de quienes, incluso entre muros, siguen eligiendo florecer.</p>
         </div>
       </section>
 
@@ -16,23 +16,32 @@ const Esperanza: React.FC = () => {
         <div className="container">
           <div className="story-content">
             <div className="story-text">
-              <h2>La Historia de una Mujer</h2>
+              <h2>Esperanza más allá de los muros</h2>
               <p>
-                En un rincón olvidado de la ciudad, donde las calles guardan secretos 
-                y los muros escuchan historias, vivía una mujer cuya vida se tejía 
-                entre la adversidad y la esperanza.
+                "Esperanza más allá de los muros" es un relato colectivo que nace en el corazón del encierro, 
+                pero cuya voz trasciende los barrotes, las fronteras y los silencios impuestos. Fue tejido por 
+                mujeres privadas de la libertad que, a través de la palabra, encontraron un camino para 
+                reconstruirse, para imaginar, para florecer.
               </p>
               <p>
-                Su nombre era Esperanza, no por casualidad, sino porque cada amanecer 
-                traía consigo la promesa de un nuevo comienzo. A pesar de las 
-                circunstancias que la rodeaban, ella nunca perdió la fe en que 
-                un mundo mejor era posible.
+                En cada página germina la fuerza de quienes se negaron a que el encierro definiera su historia. 
+                Sus voces, entrelazadas, narran la posibilidad de reinventar la vida, de hallar luz en medio 
+                del concreto y de transformar la herida en raíz.
               </p>
               <p>
-                Su historia nos enseña que la esperanza no es solo un sentimiento, 
-                sino una fuerza transformadora que nos permite ver más allá de 
-                los muros que nos rodean y soñar con un futuro donde la justicia 
-                social y la dignidad humana sean realidades tangibles.
+                Pero "Esperanza" no es solo un personaje: es un gesto político y afectivo, una metáfora de la 
+                potencia humana para resistir, crear y cuidar. La esperanza aquí no es pasiva; es una práctica 
+                viva que se teje en lo cotidiano, en lo colectivo y en el deseo de construir un mundo donde la 
+                justicia florezca desde el cuidado.
+              </p>
+              <p>
+                Leer esta historia es abrir una grieta en el muro y dejar pasar la luz. Es acompañar a las 
+                mujeres que la escribieron en su viaje hacia la libertad simbólica: esa que se alcanza cuando 
+                nos atrevemos a imaginar que otra forma de existir —más digna, más justa, más amorosa— es posible.
+              </p>
+              <p>
+                <em>Porque la esperanza no se encierra, se transforma.</em><br/>
+                <em>Porque florecer también es un acto de resistencia.</em>
               </p>
             </div>
             <div className="story-image">
@@ -44,26 +53,38 @@ const Esperanza: React.FC = () => {
 
       <section className="values-section">
         <div className="container">
-          <h2>Los Valores de Esperanza</h2>
-          <div className="values-grid">
-            <div className="value-card">
-              <div className="value-icon">💪</div>
-              <h3>Resiliencia</h3>
-              <p>La capacidad de levantarse después de cada caída, más fuerte y sabia.</p>
+          <h2>El sentido de la Esperanza</h2>
+          <p className="slogan">No se espera, se construye.</p>
+          <div className="values-content">
+            <div className="values-text">
+              <p>
+                La esperanza no es una ilusión ni una espera pasiva: es una fuerza que se rehace en la acción.
+                Resignificar la esperanza implica comprender que no basta con sentirla —hay que cultivarla, 
+                defenderla y construir las condiciones para que florezca.
+              </p>
+              <p>
+                Las mujeres que dieron vida a este relato la transformaron en una práctica colectiva: un acto 
+                de responsabilidad frente a sí mismas, frente a las otras y frente a una sociedad que aún debe 
+                reparar, incluir y cuidar. Su esperanza no ignora la realidad, la enfrenta. No niega el dolor, 
+                lo convierte en semilla.
+              </p>
+              <p>
+                Porque la esperanza no florece sola: necesita del compromiso individual y de la acción 
+                institucional, de políticas que abracen la vida y de comunidades que se reconozcan 
+                interdependientes. Esperanza, entonces, es insistir, cuidar y transformar lo que duele.
+                Es imaginar juntas un mundo donde la justicia se teja desde el cuidado y la dignidad.
+              </p>
             </div>
-            <div className="value-card">
-              <div className="value-icon">🤝</div>
-              <h3>Solidaridad</h3>
-              <p>El compromiso de caminar juntos hacia un futuro más justo.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">🌟</div>
-              <h3>Esperanza</h3>
-              <p>La luz que nos guía incluso en los momentos más oscuros.</p>
-            </div>
+          </div>
+          <div className="download-container">
+            <button className="download-btn">
+              <span>📄</span>
+              Descargar Libro en PDF
+            </button>
           </div>
         </div>
       </section>
+
     </div>
   );
 };
