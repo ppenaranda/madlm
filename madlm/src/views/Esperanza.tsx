@@ -48,42 +48,19 @@ const Esperanza: React.FC = () => {
               <img src={EsperanzaImg} alt="Esperanza" className="esperanza-photo" />
             </div>
           </div>
+          <div className="download-container">
+            <a
+              className="download-btn"
+              href="/downloads/libro_esperanza_mas_alla_de_los_muros.pdf"
+              download
+            >
+              <span>📄</span>
+              Descargar Libro en PDF
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="values-section">
-        <div className="container">
-          <h2>El sentido de la Esperanza</h2>
-          <p className="slogan">No se espera, se construye.</p>
-          <div className="values-content">
-            <div className="values-text">
-              <p>
-                La esperanza no es una ilusión ni una espera pasiva: es una fuerza que se rehace en la acción.
-                Resignificar la esperanza implica comprender que no basta con sentirla —hay que cultivarla, 
-                defenderla y construir las condiciones para que florezca.
-              </p>
-              <p>
-                Las mujeres que dieron vida a este relato la transformaron en una práctica colectiva: un acto 
-                de responsabilidad frente a sí mismas, frente a las otras y frente a una sociedad que aún debe 
-                reparar, incluir y cuidar. Su esperanza no ignora la realidad, la enfrenta. No niega el dolor, 
-                lo convierte en semilla.
-              </p>
-              <p>
-                Porque la esperanza no florece sola: necesita del compromiso individual y de la acción 
-                institucional, de políticas que abracen la vida y de comunidades que se reconozcan 
-                interdependientes. Esperanza, entonces, es insistir, cuidar y transformar lo que duele.
-                Es imaginar juntas un mundo donde la justicia se teja desde el cuidado y la dignidad.
-              </p>
-            </div>
-          </div>
-          <div className="download-container">
-            <button className="download-btn">
-              <span>📄</span>
-              Descargar Libro en PDF
-            </button>
-          </div>
-        </div>
-      </section>
 
     </div>
   );

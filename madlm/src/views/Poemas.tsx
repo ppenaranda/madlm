@@ -25,7 +25,7 @@ const Poemas: React.FC = () => {
       Pero olvidan que hasta el silencio tiene grietas.
        Y en esas grietas sembramos.
        Y en esas semillas, florecemos.`,
-      imagen: "🌿",
+      imagen: "🌻",
       preview: "Dicen que aquí no crece nada..."
     },
     {
@@ -38,7 +38,7 @@ const Poemas: React.FC = () => {
       No estamos solas,
       cuando una florece,
       florecemos todas.`,
-      imagen: "🤝",
+      imagen: "🌷",
       preview: "Nos miramos y nos reconocemos..."
     },
     {
@@ -53,7 +53,7 @@ const Poemas: React.FC = () => {
       Soy todas las mujeres que me habitan,
       y todas florecen conmigo.
       `,
-      imagen: "🌊",
+      imagen: "🪷",
       preview: "Soy muchas..."
     },
     {
@@ -65,7 +65,7 @@ const Poemas: React.FC = () => {
       mi historia no cabe en sus carpetas.
       Soy más que estas paredes.
       Soy mujer, soy vida.`,
-      imagen: "🕊️",
+      imagen: "🌹",
       preview: "No soy solo un número..."
     },
     {
@@ -76,7 +76,7 @@ const Poemas: React.FC = () => {
       mi voz levanta la tuya.
       Juntas tejemos una red 
       que ningún muro puede romper.`,
-      imagen: "🫶",
+      imagen: "🪻",
       preview: "Tu fuerza sostiene la mía..."
     },
     {
@@ -104,8 +104,10 @@ const Poemas: React.FC = () => {
     <div className="poemas">
       <section className="hero-section">
         <div className="container">
-          <h1>Poemas</h1>
-          <p className="subtitle">Versos que inspiran y transforman</p>
+          <h1>Poemario</h1>
+          <p className="subtitle">Entre grietas y flores es un poemario que brota de la resistencia. Sus versos fueron escritos por mujeres en condición de encierro que, a pesar de los muros, encontraron en la palabra un lugar para florecer.
+          Cada poema es una semilla, una flor que desafía los muros y nos recuerda que la vida —aun en los lugares más áridos— siempre encuentra la forma de florecer.
+          </p>
         </div>
       </section>
 
